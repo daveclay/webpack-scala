@@ -1,17 +1,21 @@
-import React from 'react';
+import React from 'react'
 import ReactDOM from 'react-dom';
 
-class Hello extends React.Component {
-  render() {
-    return <h1>Hello</h1>
-  }
-}
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import reducers from './reducers/reducers'
+import App from './components/App'
+
+let store = createStore(reducers)
 
 if (typeof document !== 'undefined') {
-  ReactDOM.render(
-    <Hello />,
+  render(
+    <Provider store={store}>
+      <App />
+    </Provider>,
     document.getElementById('root')
-  );
+  )
 } else {
-  console.log(greeting);
+  console.log("No document");
 }
