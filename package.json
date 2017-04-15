@@ -20,6 +20,8 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.16.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
     "velocity-animate": "^1.2.3"
   }
 }
