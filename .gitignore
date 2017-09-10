@@ -1,3 +1,6 @@
 node
 node_modules
 target
+webpack-scala.iml
+.history
+src/main/webapp/js/app.bundle.js
